@@ -1,0 +1,83 @@
+@define-grid mygrid  {
+  gutter: 24px;
+  margin: 24px;
+  columns: 12;
+
+  @define-media phone screen and (max-width: 480px) {
+    gutter: 8px;
+    margin: 16px;
+    columns: 4;
+  }
+
+  @define-media tablet screen and (min-width: 481px) and (max-width: 840px) {
+    gutter: 16px;
+    margin: 16px;
+    columns: 8;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  grid: mygrid;
+
+  background-color: #9E9E9E;
+}
+
+.row {
+  grid-row: mygrid;
+}
+
+.cell {
+  @grid-cell mygrid {
+    span: 2;
+    offset-before: 3;
+    offset-after: 1;
+
+    @grid-media phone {
+      span: 2;
+      offset-before: 3;
+      offset-after: 1;
+    }
+
+    @grid-media tablet {
+      span: 2;
+      offset-before: 3;
+      offset-after: 1;
+      opacity: 0.5;
+    }
+  }
+}
+
+.cell-1 {
+  background-color: #673AB7;
+  text-align: center;
+  height: 48px;
+
+  @grid-cell mygrid {
+    span: 1;
+  }
+}
+
+.cell-2 {
+  background-color: #FF5722;
+  text-align: center;
+  height: 48px;
+
+  @grid-cell mygrid {
+    span: 2;
+  }
+}
+
+.cell-3 {
+  background-color: #FF5722;
+  text-align: center;
+  height: 48px;
+
+  @grid-cell mygrid {
+    span: 3;
+  }
+}

@@ -16,15 +16,18 @@
   },
   "homepage": "https://github.com/frm-adiputra/postcss-mdgrid",
   "dependencies": {
+    "parse-css-dimension": "^1.0.1",
     "postcss": "^5.0.21"
   },
   "devDependencies": {
     "ava": "^0.14.0",
     "eslint": "^2.10.0",
-    "eslint-config-postcss": "^2.0.2"
+    "eslint-config-postcss": "^2.0.2",
+    "postcss-cli": "^2.5.2"
   },
   "scripts": {
-    "test": "ava && eslint *.js"
+    "test": "ava && eslint *.js",
+    "build-examples": "postcss -o build/grid.css -u postcss-mdgrid examples/grid.css"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5"
