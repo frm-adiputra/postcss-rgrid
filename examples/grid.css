@@ -1,4 +1,4 @@
-@define-grid mygrid  {
+@define-grid mygrid {
   gutter: 24px;
   margin: 24px;
   columns: 12;
@@ -31,7 +31,12 @@ body {
   grid-row: mygrid;
 }
 
+.row > * {
+  margin: 8px 0;
+}
+
 .cell {
+  text-align: center;
   @grid-cell mygrid {
     span: 2;
     offset-before: 3;
@@ -47,18 +52,22 @@ body {
       span: 2;
       offset-before: 3;
       offset-after: 1;
-      opacity: 0.5;
+      position: static;
     }
   }
+  z-index: 2;
 }
 
 .cell-1 {
   background-color: #673AB7;
   text-align: center;
   height: 48px;
-
   @grid-cell mygrid {
     span: 1;
+
+    @grid-media tablet {
+      span: 2;
+    }
   }
 }
 
@@ -66,7 +75,6 @@ body {
   background-color: #FF5722;
   text-align: center;
   height: 48px;
-
   @grid-cell mygrid {
     span: 2;
   }
@@ -76,7 +84,6 @@ body {
   background-color: #FF5722;
   text-align: center;
   height: 48px;
-
   @grid-cell mygrid {
     span: 3;
   }
