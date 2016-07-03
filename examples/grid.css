@@ -66,17 +66,30 @@ body {
     span: 1;
 
     @grid-media tablet {
-      span: 2;
+      span: 1;
     }
   }
 }
 
-.cell-2 {
+.cell-2,
+.cell-2-ob {
   background-color: #FF5722;
   text-align: center;
   height: 48px;
   @grid-cell mygrid {
     span: 2;
+  }
+}
+
+.cell-2-ob {
+  @grid-cell mygrid {
+    offset-before: 3;
+    offset-after: 5;
+
+    @grid-media tablet {
+      offset-before: 1;
+      offset-after: 2;
+    }
   }
 }
 
