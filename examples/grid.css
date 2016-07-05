@@ -38,20 +38,14 @@ body {
 .cell {
   text-align: center;
   @grid-cell mygrid {
-    span: 2;
-    offset-before: 3;
-    offset-after: 1;
+    col-span: 2 3 1;
 
     @grid-media phone {
-      span: 2;
-      offset-before: 3;
-      offset-after: 1;
+      col-span: 2 3 1;
     }
 
     @grid-media tablet {
-      span: 2;
-      offset-before: 3;
-      offset-after: 1;
+      col-span: 2 3 1;
       position: static;
     }
   }
@@ -61,10 +55,10 @@ body {
 .cell-1 {
   background-color: #F44336;
   @grid-cell mygrid {
-    span: 1;
+    col-span: 1;
 
     @grid-media tablet {
-      span: 1;
+      col-span: 1;
     }
   }
 }
@@ -73,84 +67,83 @@ body {
 .cell-2-ob {
   background-color: #E91E63;
   @grid-cell mygrid {
-    span: 2;
+    col-span: 2;
   }
 }
 
 .cell-2-ob {
   @grid-cell mygrid {
-    offset-before: 3;
-    offset-after: 5;
+    col-span: 2 3 5;
   }
 }
 
 .cell-3 {
   background-color: #9C27B0;
   @grid-cell mygrid {
-    span: 3;
+    col-span: 3;
   }
 }
 
 .cell-4 {
   background-color: #673AB7;
   @grid-cell mygrid {
-    span: 4;
+    col-span: 4;
   }
 }
 
 .cell-5 {
   background-color: #3F51B5;
   @grid-cell mygrid {
-    span: 5;
+    col-span: 5;
   }
 }
 
 .cell-6 {
   background-color: #2196F3;
   @grid-cell mygrid {
-    span: 6;
+    col-span: 6;
   }
 }
 
 .cell-7 {
   background-color: #03A9F4;
   @grid-cell mygrid {
-    span: 7;
+    col-span: 7;
   }
 }
 
 .cell-8 {
   background-color: #00BCD4;
   @grid-cell mygrid {
-    span: 8;
+    col-span: 8;
   }
 }
 
 .cell-9 {
   background-color: #009688;
   @grid-cell mygrid {
-    span: 9;
+    col-span: 9;
   }
 }
 
 .cell-10 {
   background-color: #4CAF50;
   @grid-cell mygrid {
-    span: 10;
+    col-span: 10;
   }
 }
 
 .cell-11 {
   background-color: #FF9800;
   @grid-cell mygrid {
-    span: 11;
+    col-span: 11;
   }
 }
 
 .cell-12 {
   background-color: #795548;
   @grid-cell mygrid {
-    span: 12;
+    col-span: 12;
   }
 }
 
@@ -158,8 +151,7 @@ body {
   background-color: #F44336;
   content: "0 - 1 - 11";
   @grid-cell mygrid {
-    span: 1;
-    offset-after: 11;
+    col-span: 1 0 11;
   }
 }
 
@@ -167,9 +159,7 @@ body {
   background-color: #E91E63;
   content: "1 - 1 - 10";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 1;
-    offset-after: 10;
+    col-span: 1 1 10;
   }
 }
 
@@ -177,9 +167,7 @@ body {
   background-color: #9C27B0;
   content: "2 - 1 - 9";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 2;
-    offset-after: 9;
+    col-span: 1 2 9;
   }
 }
 
@@ -187,9 +175,7 @@ body {
   background-color: #673AB7;
   content: "3 - 1 - 8";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 3;
-    offset-after: 8;
+    col-span: 1 3 8;
   }
 }
 
@@ -197,9 +183,7 @@ body {
   background-color: #3F51B5;
   content: "4 - 1 - 7";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 4;
-    offset-after: 7;
+    col-span: 1 4 7;
   }
 }
 
@@ -207,9 +191,7 @@ body {
   background-color: #2196F3;
   content: "5 - 1 - 6";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 5;
-    offset-after: 6;
+    col-span: 1 5 6;
   }
 }
 
@@ -217,9 +199,7 @@ body {
   background-color: #03A9F4;
   content: "6 - 1 - 5";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 6;
-    offset-after: 5;
+    col-span: 1 6 5;
   }
 }
 
@@ -227,9 +207,7 @@ body {
   background-color: #00BCD4;
   content: "7 - 1 - 4";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 7;
-    offset-after: 4;
+    col-span: 1 7 4;
   }
 }
 
@@ -237,9 +215,7 @@ body {
   background-color: #009688;
   content: "8 - 1 - 3";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 8;
-    offset-after: 3;
+    col-span: 1 8 3;
   }
 }
 
@@ -247,9 +223,7 @@ body {
   background-color: #4CAF50;
   content: "9 - 1 - 2";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 9;
-    offset-after: 2;
+    col-span: 1 9 2;
   }
 }
 
@@ -257,9 +231,7 @@ body {
   background-color: #FF9800;
   content: "10 - 1 - 1";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 10;
-    offset-after: 1;
+    col-span: 1 10 1;
   }
 }
 
@@ -267,8 +239,7 @@ body {
   background-color: #795548;
   content: "11 - 1 - 0";
   @grid-cell mygrid {
-    span: 1;
-    offset-before: 11;
+    col-span: 1 11;
   }
 }
 
