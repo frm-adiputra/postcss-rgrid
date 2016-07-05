@@ -1,4 +1,4 @@
-# PostCSS Mdgrid [![Build Status][ci-img]][ci]
+# PostCSS RGrid [![Build Status][ci-img]][ci]
 
 [PostCSS] plugin for simple and responsive grid.
 
@@ -17,6 +17,11 @@
   /* Output example */
 }
 ```
+
+## Features
+
+- Adjustable grid columns in media queries.
+- Adjustable grid gutter and margin in media queries.
 
 ## Usage
 
@@ -51,7 +56,7 @@ postcss([ require('postcss-mdgrid') ])
   @grid-cell mygrid {
 
     /* span 2 columns without offset */
-    col-span: 2;
+    grid-cell-span-columns: 2;
 
     /* Use align-self property to align individual cell */
     /* Use order property to specify cell ordering */
@@ -59,13 +64,13 @@ postcss([ require('postcss-mdgrid') ])
     @grid-media phone { /* must not include grid name */
 
       /* span 2 columns with 1 column offset before the cell */
-      col-span: 2 1;
+      grid-cell-span-columns: 2 1;
     }
 
     @grid-media tablet { /* must not include grid name */
 
       /* span 2 columns with 1 column offset before and 3 column offset after the cell */
-      col-span: 2 1 3;
+      grid-cell-span-columns: 2 1 3;
     }
   }
 }
