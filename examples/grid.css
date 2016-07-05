@@ -59,9 +59,7 @@ body {
 }
 
 .cell-1 {
-  background-color: #673AB7;
-  text-align: center;
-  height: 48px;
+  background-color: #F44336;
   @grid-cell mygrid {
     span: 1;
 
@@ -73,9 +71,7 @@ body {
 
 .cell-2,
 .cell-2-ob {
-  background-color: #FF5722;
-  text-align: center;
-  height: 48px;
+  background-color: #E91E63;
   @grid-cell mygrid {
     span: 2;
   }
@@ -85,19 +81,346 @@ body {
   @grid-cell mygrid {
     offset-before: 3;
     offset-after: 5;
-
-    @grid-media tablet {
-      offset-before: 1;
-      offset-after: 2;
-    }
   }
 }
 
 .cell-3 {
-  background-color: #FF5722;
-  text-align: center;
-  height: 48px;
+  background-color: #9C27B0;
   @grid-cell mygrid {
     span: 3;
   }
+}
+
+.cell-4 {
+  background-color: #673AB7;
+  @grid-cell mygrid {
+    span: 4;
+  }
+}
+
+.cell-5 {
+  background-color: #3F51B5;
+  @grid-cell mygrid {
+    span: 5;
+  }
+}
+
+.cell-6 {
+  background-color: #2196F3;
+  @grid-cell mygrid {
+    span: 6;
+  }
+}
+
+.cell-7 {
+  background-color: #03A9F4;
+  @grid-cell mygrid {
+    span: 7;
+  }
+}
+
+.cell-8 {
+  background-color: #00BCD4;
+  @grid-cell mygrid {
+    span: 8;
+  }
+}
+
+.cell-9 {
+  background-color: #009688;
+  @grid-cell mygrid {
+    span: 9;
+  }
+}
+
+.cell-10 {
+  background-color: #4CAF50;
+  @grid-cell mygrid {
+    span: 10;
+  }
+}
+
+.cell-11 {
+  background-color: #FF9800;
+  @grid-cell mygrid {
+    span: 11;
+  }
+}
+
+.cell-12 {
+  background-color: #795548;
+  @grid-cell mygrid {
+    span: 12;
+  }
+}
+
+.cell-1-offset-0 {
+  background-color: #F44336;
+  content: "0 - 1 - 11";
+  @grid-cell mygrid {
+    span: 1;
+    offset-after: 11;
+  }
+}
+
+.cell-1-offset-1 {
+  background-color: #E91E63;
+  content: "1 - 1 - 10";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 1;
+    offset-after: 10;
+  }
+}
+
+.cell-1-offset-2 {
+  background-color: #9C27B0;
+  content: "2 - 1 - 9";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 2;
+    offset-after: 9;
+  }
+}
+
+.cell-1-offset-3 {
+  background-color: #673AB7;
+  content: "3 - 1 - 8";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 3;
+    offset-after: 8;
+  }
+}
+
+.cell-1-offset-4 {
+  background-color: #3F51B5;
+  content: "4 - 1 - 7";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 4;
+    offset-after: 7;
+  }
+}
+
+.cell-1-offset-5 {
+  background-color: #2196F3;
+  content: "5 - 1 - 6";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 5;
+    offset-after: 6;
+  }
+}
+
+.cell-1-offset-6 {
+  background-color: #03A9F4;
+  content: "6 - 1 - 5";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 6;
+    offset-after: 5;
+  }
+}
+
+.cell-1-offset-7 {
+  background-color: #00BCD4;
+  content: "7 - 1 - 4";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 7;
+    offset-after: 4;
+  }
+}
+
+.cell-1-offset-8 {
+  background-color: #009688;
+  content: "8 - 1 - 3";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 8;
+    offset-after: 3;
+  }
+}
+
+.cell-1-offset-9 {
+  background-color: #4CAF50;
+  content: "9 - 1 - 2";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 9;
+    offset-after: 2;
+  }
+}
+
+.cell-1-offset-10 {
+  background-color: #FF9800;
+  content: "10 - 1 - 1";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 10;
+    offset-after: 1;
+  }
+}
+
+.cell-1-offset-11 {
+  background-color: #795548;
+  content: "11 - 1 - 0";
+  @grid-cell mygrid {
+    span: 1;
+    offset-before: 11;
+  }
+}
+
+/* Additional styles */
+
+.cell-1,
+.cell-2,
+.cell-2-ob,
+.cell-3,
+.cell-4,
+.cell-5,
+.cell-6,
+.cell-7,
+.cell-8,
+.cell-9,
+.cell-10,
+.cell-11,
+.cell-12,
+.cell-1-offset-0,
+.cell-1-offset-1,
+.cell-1-offset-2,
+.cell-1-offset-3,
+.cell-1-offset-4,
+.cell-1-offset-5,
+.cell-1-offset-6,
+.cell-1-offset-7,
+.cell-1-offset-8,
+.cell-1-offset-9,
+.cell-1-offset-10,
+.cell-1-offset-11 {
+  position: relative;
+  text-align: center;
+  height: 48px;
+}
+
+.cell-1::after,
+.cell-2::after,
+.cell-2-ob::after,
+.cell-3::after,
+.cell-4::after,
+.cell-5::after,
+.cell-6::after,
+.cell-7::after,
+.cell-8::after,
+.cell-9::after,
+.cell-10::after,
+.cell-11::after,
+.cell-12::after,
+.cell-1-offset-0::after,
+.cell-1-offset-1::after,
+.cell-1-offset-2::after,
+.cell-1-offset-3::after,
+.cell-1-offset-4::after,
+.cell-1-offset-5::after,
+.cell-1-offset-6::after,
+.cell-1-offset-7::after,
+.cell-1-offset-8::after,
+.cell-1-offset-9::after,
+.cell-1-offset-10::after,
+.cell-1-offset-11::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cell-1::after {
+  content: "1";
+}
+.cell-2::after,
+.cell-2-ob::after {
+  content: "2";
+}
+.cell-3::after {
+  content: "3";
+}
+.cell-4::after {
+  content: "4";
+}
+.cell-5::after {
+  content: "5";
+}
+.cell-6::after {
+  content: "6";
+}
+.cell-7::after {
+  content: "7";
+}
+.cell-8::after {
+  content: "8";
+}
+.cell-9::after {
+  content: "9";
+}
+.cell-10::after {
+  content: "10";
+}
+.cell-11::after {
+  content: "11";
+}
+.cell-12::after {
+  content: "12";
+}
+
+.cell-1-offset-0::after {
+  content: "0 - 1 - 11";
+}
+
+.cell-1-offset-1::after {
+  content: "1 - 1 - 10";
+}
+
+.cell-1-offset-2::after {
+  content: "2 - 1 - 9";
+}
+
+.cell-1-offset-3::after {
+  content: "3 - 1 - 8";
+}
+
+.cell-1-offset-4::after {
+  content: "4 - 1 - 7";
+}
+
+.cell-1-offset-5::after {
+  content: "5 - 1 - 6";
+}
+
+.cell-1-offset-6::after {
+  content: "6 - 1 - 5";
+}
+
+.cell-1-offset-7::after {
+  content: "7 - 1 - 4";
+}
+
+.cell-1-offset-8::after {
+  content: "8 - 1 - 3";
+}
+
+.cell-1-offset-9::after {
+  content: "9 - 1 - 2";
+}
+
+.cell-1-offset-10::after {
+  content: "10 - 1 - 1";
+}
+
+.cell-1-offset-11::after {
+  content: "11 - 1 - 0";
 }
