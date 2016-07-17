@@ -92,6 +92,11 @@ In the following example `.grid` will be the the grid container and `.row` will 
 ```
 
 
+#### Grid width
+
+By default the grid is fluid, you can limit its width by setting `max-width` on grid container.
+
+
 #### Styling grid's cell
 
 Use `@grid-cell` to apply cell styles, and `@grid-cell-media` for the media breakpoints.
