@@ -7,13 +7,11 @@ var libs = [
     require('./lib/grid-row'),
     require('./lib/grid-cell'),
     require('./lib/grid-media')
-    // require('./lib/define-mdgrid'),
-    // require('./lib/cell')
 ];
 
 var defaultOpts = {};
 
-module.exports = postcss.plugin('postcss-mdgrid', function (opts) {
+module.exports = postcss.plugin('postcss-rgrid', function (opts) {
     opts = opts || {};
     opts = assign(defaultOpts, opts || {});
 
