@@ -1,6 +1,6 @@
 # PostCSS RGrid [![Build Status][ci-img]][ci]
 
-[PostCSS] plugin for simple responsive grid.
+[PostCSS] plugin for simple and responsive grid.
 
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/frm-adiputra/postcss-rgrid.svg

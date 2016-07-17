@@ -1,7 +1,7 @@
 {
-  "name": "postcss-mdgrid",
-  "version": "0.0.0",
-  "description": "PostCSS plugin Material Design Grid",
+  "name": "postcss-rgrid",
+  "version": "0.1.0",
+  "description": "PostCSS plugin for simple and responsive grid",
   "keywords": [
     "postcss",
     "css",
@@ -10,11 +10,11 @@
   ],
   "author": "Firmansyah Adiputra <frm.adiputra@gmail.com>",
   "license": "MIT",
-  "repository": "frm-adiputra/postcss-mdgrid",
+  "repository": "frm-adiputra/postcss-rgrid",
   "bugs": {
-    "url": "https://github.com/frm-adiputra/postcss-mdgrid/issues"
+    "url": "https://github.com/frm-adiputra/postcss-rgrid/issues"
   },
-  "homepage": "https://github.com/frm-adiputra/postcss-mdgrid",
+  "homepage": "https://github.com/frm-adiputra/postcss-rgrid",
   "dependencies": {
     "parse-css-dimension": "^1.0.1",
     "postcss": "^5.0.21"
@@ -27,7 +27,7 @@
   },
   "scripts": {
     "test": "ava && eslint *.js",
-    "build-examples": "postcss -o build/grid.css -u postcss-mdgrid examples/grid.css"
+    "build-examples": "postcss -o build/grid.css -u postcss-rgrid examples/grid.css"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5"
