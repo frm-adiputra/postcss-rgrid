@@ -27,6 +27,12 @@ body {
   background-color: #9E9E9E;
 }
 
+.grid--maxWidth {
+  grid: mygrid;
+  max-width: 960px;
+  background-color: #9E9E9E;
+}
+
 .row {
   grid-row: mygrid;
 }
@@ -35,29 +41,41 @@ body {
   margin: 8px 0;
 }
 
-.cell {
-  text-align: center;
-  @grid-cell mygrid {
-    grid-cell-span-columns: 2 3 1;
+.cell-resp {
+  background-color: #9C27B0;
 
-    @grid-media phone {
-      grid-cell-span-columns: 2 3 1;
+  @grid-cell mygrid {
+    grid-cell-span-columns: 8 2 2;
+
+    @grid-cell-media phone {
+      grid-cell-span-columns: 2 1 1;
     }
 
-    @grid-media tablet {
-      grid-cell-span-columns: 2 3 1;
-      position: static;
+    @grid-cell-media tablet {
+      grid-cell-span-columns: 4 3 1;
     }
   }
-  z-index: 2;
 }
+
+.cell-resp::after {
+  content: "2 - 8 - 2";
+
+  @grid-media mygrid phone {
+    content: "1 - 2 - 1";
+  }
+
+  @grid-media mygrid tablet {
+    content: "3 - 4 - 1";
+  }
+}
+
 
 .cell-1 {
   background-color: #F44336;
   @grid-cell mygrid {
     grid-cell-span-columns: 1;
 
-    @grid-media tablet {
+    @grid-cell-media tablet {
       grid-cell-span-columns: 1;
     }
   }
@@ -245,6 +263,7 @@ body {
 
 /* Additional styles */
 
+.cell-resp,
 .cell-1,
 .cell-2,
 .cell-2-ob,
@@ -275,6 +294,7 @@ body {
   height: 48px;
 }
 
+.cell-resp::after,
 .cell-1::after,
 .cell-2::after,
 .cell-2-ob::after,

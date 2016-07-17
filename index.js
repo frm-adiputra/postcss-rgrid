@@ -5,7 +5,8 @@ var libs = [
     require('./lib/define-grid'),
     require('./lib/grid'),
     require('./lib/grid-row'),
-    require('./lib/grid-cell')
+    require('./lib/grid-cell'),
+    require('./lib/grid-media')
     // require('./lib/define-mdgrid'),
     // require('./lib/cell')
 ];

@@ -3,21 +3,21 @@ import test    from 'ava';
 
 import plugin from './';
 
-function execPlugin(input, onResolved, onRejected, opts = {}) {
-    postcss([ plugin(opts) ]).process(input).then();
-}
-
-function handleRejected(t, input, onRejected, opts = {}) {
-    execPlugin(input, function () {
-        t.fail();
-    }, onRejected, opts);
-}
-
-function handleResolved(t, input, onResolved, opts = {}) {
-    execPlugin(input, onResolved, function () {
-        t.fail();
-    }, opts);
-}
+// function execPlugin(input, onResolved, onRejected, opts = {}) {
+//     postcss([ plugin(opts) ]).process(input).then();
+// }
+//
+// function handleRejected(t, input, onRejected, opts = {}) {
+//     execPlugin(input, function () {
+//         t.fail();
+//     }, onRejected, opts);
+// }
+//
+// function handleResolved(t, input, onResolved, opts = {}) {
+//     execPlugin(input, onResolved, function () {
+//         t.fail();
+//     }, opts);
+// }
 
 function deepEqual(t, input, output, opts = {}) {
     return postcss([ plugin(opts) ]).process(input)
@@ -32,13 +32,13 @@ function processCSS(input, opts = {}) {
 }
 
 test('@define-grid invalid parameter', t => {
-    var input = '@define-grid mygrid { @define-media phone {} }';
+    var input = '@define-grid mygrid1 { @define-media phone {} }';
 
     t.throws(processCSS(input), /.*invalid parameter.*/);
 });
 
 test('@define-grid grid media redeclaration', t => {
-    var input = '@define-grid mygrid { ' +
+    var input = '@define-grid mygrid2 { ' +
         '@define-media phone (min-width: 100px) {} ' +
         '@define-media phone (min-width: 100px) {} }';
 
@@ -46,8 +46,18 @@ test('@define-grid grid media redeclaration', t => {
 });
 
 test('@define-grid remove after processing', t => {
-    var input = '@define-grid mygrid { ' +
+    var input = '@define-grid mygrid3 { ' +
         '@define-media phone (min-width: 100px) {} }';
 
-    deepEqual(t, input, '');
+    return deepEqual(t, input, '');
+});
+
+test('@grid-media', t => {
+    var input = '@define-grid mygrid4 { ' +
+        '@define-media phone (min-width: 100px) {} } ' +
+        'a { @grid-media mygrid4 phone { display: none; } }';
+
+    return deepEqual(t, input,
+        'a { }\n@media (min-width: 100px) {\n    ' +
+        'a {\n        display: none\n    }\n}');
 });
