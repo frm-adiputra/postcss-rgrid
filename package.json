@@ -15,6 +15,10 @@
     "url": "https://github.com/frm-adiputra/postcss-rgrid/issues"
   },
   "homepage": "https://github.com/frm-adiputra/postcss-rgrid",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "dependencies": {
     "parse-css-dimension": "^1.0.1",
     "postcss": "^5.0.21"
