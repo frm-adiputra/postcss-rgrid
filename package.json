@@ -1,6 +1,6 @@
 {
   "name": "postcss-rgrid",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "PostCSS plugin for simple and responsive grid",
   "keywords": [
     "postcss",
