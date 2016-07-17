@@ -1,6 +1,6 @@
 {
   "name": "postcss-rgrid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "PostCSS plugin for simple and responsive grid",
   "keywords": [
     "postcss",
@@ -10,7 +10,7 @@
   ],
   "author": "Firmansyah Adiputra <frm.adiputra@gmail.com>",
   "license": "MIT",
-  "repository": "frm-adiputra/postcss-rgrid",
+  "repository": "https://github.com/frm-adiputra/postcss-rgrid.git",
   "bugs": {
     "url": "https://github.com/frm-adiputra/postcss-rgrid/issues"
   },
