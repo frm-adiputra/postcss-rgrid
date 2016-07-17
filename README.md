@@ -3,8 +3,8 @@
 [PostCSS] plugin for simple responsive grid.
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/frm-adiputra/postcss-mdgrid.svg
-[ci]:      https://travis-ci.org/frm-adiputra/postcss-mdgrid
+[ci-img]:  https://travis-ci.org/frm-adiputra/postcss-rgrid.svg
+[ci]:      https://travis-ci.org/frm-adiputra/postcss-rgrid
 
 ## Features
 
@@ -13,18 +13,28 @@
 - Adjustable grid gutter and margin in media queries.
 
 
-## Elements terminology
+## Elements hierarchy
 
 The **grid** element is a container that applies the grid rules.
 Direct descendants of a grid element are called **row** elements.
 The **row** element will wraps its direct descendants (**cell** elements)
 according to the grid rules.
 
+```html
+<!-- you can use any class for the grid, row, and cell -->
+<div class="grid">
+  <div class="row">
+    <div class="cell-1"></div>
+    <div class="cell-2"></div>
+  </div>
+</div>
+```
+
 
 ## Usage
 
 ```js
-postcss([ require('postcss-mdgrid') ])
+postcss([ require('postcss-rgrid') ])
 ```
 
 ### Usage examples
