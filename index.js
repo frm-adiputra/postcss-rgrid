@@ -1,5 +1,6 @@
 var postcss = require('postcss');
 var assign = require('object-assign');
+var storage = require('./lib/storage.js');
 
 var libs = [
     require('./lib/define-grid'),
@@ -19,6 +20,8 @@ module.exports = postcss.plugin('postcss-rgrid', function (opts) {
     // Work with options here
 
     return function (css) {
+
+        storage.reset();
 
         libs.forEach(function (lib) {
             lib(css, opts);
