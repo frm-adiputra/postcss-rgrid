@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.7] - 2016-07-23
+### Fixed
+- Fix grid redeclaration exception on reprocessing.
+
 ## [0.1.6] - 2016-07-17
 ### Fixed
 - Fix package name typo.
