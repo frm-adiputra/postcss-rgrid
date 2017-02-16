@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.8] - 2017-02-17
+### Fixed
+- Fix grid cell with no grid-cell-span-columns.
+
 ## [0.1.7] - 2016-07-23
 ### Fixed
 - Fix grid redeclaration exception on reprocessing.

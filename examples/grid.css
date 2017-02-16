@@ -41,6 +41,20 @@ body {
   margin: 8px 0;
 }
 
+.cell-nodefault {
+  @grid-cell mygrid {
+    /*grid-cell-span-columns: 8 2 2;*/
+
+    @grid-cell-media phone {
+      grid-cell-span-columns: 2 1 1;
+    }
+
+    @grid-cell-media tablet {
+      grid-cell-span-columns: 4 3 1;
+    }
+  }
+}
+
 .cell-resp {
   background-color: #9C27B0;
 
