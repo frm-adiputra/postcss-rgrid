@@ -1,4 +1,5 @@
 # PostCSS RGrid [![Build Status][ci-img]][ci]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffrm-adiputra%2Fpostcss-rgrid.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffrm-adiputra%2Fpostcss-rgrid?ref=badge_shield)
 
 [PostCSS] plugin for simple and responsive grid.
 
@@ -354,3 +355,7 @@ Parameters:
 
 - `grid-name`: the name of grid definition.
 - `media-name`: the name of media query defined in the specified grid definition.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffrm-adiputra%2Fpostcss-rgrid.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffrm-adiputra%2Fpostcss-rgrid?ref=badge_large)
